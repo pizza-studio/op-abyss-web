@@ -31,12 +31,6 @@ function App() {
 
   if (!data) return <div>loading...</div>
 
-  var table = "";
-
-  for (var chars in data.avatars) {
-    table += "<tr><td>" + data.avatars[chars].charId + "</td><td>" + data.avatars[chars].percentage + "</td></tr>";
-  }
-
   return (
     <div className="App">
       <header className="App-header">
@@ -54,7 +48,7 @@ function App() {
           </thead>
           <tbody>
             {
-              getTable(data.avatars)
+              getTable(data.avatars.sort((a, b) => b.percentage - a.percentage))
             }
           </tbody>
         </table>
