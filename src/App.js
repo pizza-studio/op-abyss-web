@@ -41,7 +41,7 @@ function App() {
 
         <h1>原神披萨深渊榜</h1>
 
-        <h5>总统计用户：{data.totalUsers}位深渊满星玩家</h5>
+        <h5>统计范围：{data.totalUsers}位深渊满星玩家</h5>
 
         <table>
           <thead>
@@ -58,7 +58,7 @@ function App() {
         </table>
 
         <div className='footer'>
-          <p>打开<a href="https://apps.apple.com/app/id1635319193">原神披萨小助手</a>iOS App查看更多信息和其他榜单 | <a href='http://ophelper.top/static/faq_abyss'>FAQ</a></p>
+          <p>打开<a href="https://apps.apple.com/app/id1635319193">原神披萨小助手</a>iOS App查看更多信息和其他榜单  |  榜单如何计算？数据如何上传？请看<a href='http://ophelper.top/static/faq_abyss'>FAQ</a></p>
           <h5><p>Powered by <a href="https://apps.apple.com/app/id1635319193">Genshin Pizza Helper</a></p></h5>
         </div>
       </header>
