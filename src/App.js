@@ -2,8 +2,8 @@
 import './App.css';
 import axios from 'axios';
 import useSWR from "swr";
+// import './Api.js';
 
-// const fetcher = config => axios(config).then(res => res.data);
 const fetcher = async url => {
   const res = await axios.get(url, {
     headers: {
