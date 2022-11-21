@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+import logo from './logo.jpg';
 import './App.css';
 import axios from 'axios';
 import useSWR from "swr";
@@ -37,10 +37,11 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>原神披萨深渊榜</h1>
-        <p>Powered by Genshin Pizza Helper</p>
+        <img className='logo' src={logo} alt="logo" />
 
-        <h3>总用户：{data.totalUsers}</h3>
+        <h1>原神披萨深渊榜</h1>
+
+        <h5>总统计用户：{data.totalUsers}人</h5>
 
         <table>
           <thead>
@@ -52,10 +53,12 @@ function App() {
           <tbody>
             {
               getTable(data.avatars.sort((a, b) => b.percentage - a.percentage))
-              // getTable(data.avatars)
             }
           </tbody>
         </table>
+
+
+        <h5><p>Powered by <a href="https://apps.apple.com/app/id1635319193">Genshin Pizza Helper</a></p></h5>
       </header>
     </div>
   );
@@ -71,9 +74,9 @@ function getTable(data) {
   return rowData;
 }
 
-function toPercent(point){
-  var str=Number(point*100).toFixed(2);
-  str+="%";
+function toPercent(point) {
+  var str = Number(point * 100).toFixed(2);
+  str += "%";
   return str;
 }
 
