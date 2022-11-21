@@ -25,7 +25,15 @@
 }
 
 a:link {
-  color: rgb(131, 27, 222);
+  color: rgb(170, 105, 223);
+}
+
+a:visited {
+  color: rgb(170, 105, 223);
+}
+
+.footer {
+  font-size: medium;
 }
 
 .logo {
