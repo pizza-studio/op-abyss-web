@@ -142,3 +142,5 @@ charIdMap.set(10000071, '赛诺');
 charIdMap.set(10000072, '坎蒂丝');
 charIdMap.set(10000073, '纳西妲');
 charIdMap.set(10000074, '莱伊拉');
+charIdMap.set(10000075, '流浪者');
+charIdMap.set(10000076, '珐露珊');
