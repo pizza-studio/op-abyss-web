@@ -144,3 +144,5 @@ charIdMap.set(10000073, '纳西妲');
 charIdMap.set(10000074, '莱伊拉');
 charIdMap.set(10000075, '流浪者');
 charIdMap.set(10000076, '珐露珊');
+charIdMap.set(10000077, '瑶瑶');
+charIdMap.set(10000078, '艾尔海森');
